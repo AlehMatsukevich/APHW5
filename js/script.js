@@ -13,6 +13,13 @@ $COLUMN[1].removeChild($ADV);
 console.log($COLUMN[1]);
 console.log($MENU);
 
+let second = $MENU[1].textContent;
+$MENU[1].textContent = $MENU[2].textContent;
+$MENU[2].textContent = second;
+// [$MENU[1].textContent, $MENU[2].textContent] = [$MENU[2].textContent, $MENU[1].textContent];
+console.log($MENU[2]);
+console.log(second);
+console.log($MENU);
 
 
 $PROMPT.textContent = prompt('как вы относитесь к технике apple?');
